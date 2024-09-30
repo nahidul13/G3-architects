@@ -106,6 +106,48 @@ main {
   color: coral;
   font-size: 2rem;
 }
+/* Features will you love and enjoy-------------------------------------------- */
+.experience {
+  display: flex;
+  justify-content: space-between;
+  gap: 90px;
+  margin-top: 100px;
+}
+/* .experience-img img {
+  width: 1009
+  height: 100%;
+} */
+.experience-img {
+  width: 50%;
+}
+.experience-inf {
+  padding: 20px;
+  margin-top: 18px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.ten-year {
+  background-color: coral;
+  color: #fff;
+  width: 300px;
+  /* height: 150px; */
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+  bottom: 100px;
+  right: 55px;
+}
+.ten-year h3 {
+  margin-bottom: 0px;
+  /* margin-top: 5px; */
+}
+.ten-year p {
+  margin-top: 0px;
+  font-size: 2rem;
+}
+
 /* facts section  ------------------------------------------------------------------------*/
 .facts-cards {
   display: flex;
