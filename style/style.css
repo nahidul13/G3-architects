@@ -1,5 +1,7 @@
 /* font from google */
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* common style use ----------------------------------------------------------------- */
 * {
   font-family: "Work Sans", sans-serif;
 }
@@ -25,6 +27,15 @@
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
+.title {
+  font-size: 3rem;
+  font-weight: 500;
+}
+.description {
+  font-size: 1.1rem;
+  color: #727272;
+  margin-bottom: 3rem;
+}
 /* header-------------------------------------------------------- */
 header {
   background-color: #f1eedc;
@@ -35,10 +46,7 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-.nav-title {
-  font-size: 2.8rem;
-  font-weight: 500;
-}
+
 nav > ul {
   display: flex;
 }
@@ -98,7 +106,40 @@ main {
   color: coral;
   font-size: 2rem;
 }
-/* responsive media--------------------------------------------------------------------------- */
+/* facts section  ------------------------------------------------------------------------*/
+.facts-cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.facts-cards .card {
+  border: 1px chocolate solid;
+  text-align: center;
+  padding: 35px 37px;
+}
+.facts-cards .card-stats {
+  font-size: 2.8rem;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+.facts-cards .card-para {
+  font-size: 1.3rem;
+  margin-top: 5px;
+}
+/* sponspors section -------------------------------------------------------------- */
+.sponspors {
+  text-align: center;
+  margin-top: 30px;
+}
+.sponspors-imgs-card {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+  gap: 30px;
+}
+
+/* responsive media=========================================================/
 
 /* media screen for small device */
 @media screen and (max-width: 576px) {
@@ -108,7 +149,9 @@ main {
     padding: 15px;
   }
   nav,
-  .features-section {
+  .features-section,
+  .facts-cards,
+  .sponspors-imgs-card {
     flex-direction: column;
   }
 
@@ -117,11 +160,16 @@ main {
   .features-img-tank {
     grid-template-columns: repeat(1, 1fr);
   }
+  .facts-cards .card {
+    margin-bottom: 30px;
+  }
 }
+
 /* for medium device */
 @media screen and (min-width: 576px) and (max-width: 960px) {
   nav,
-  .features-section {
+  .features-section,
+  .sponspors-imgs-card {
     flex-direction: column;
   }
   header,
